@@ -45,7 +45,7 @@ function App() {
   },
   {
     id: 6,
-    title: "Harry Potter and the Sorcerer’s Stone",
+    title: "Harry Potter and the Sorcerer",
     author: "J.K. Rowling",
     year: 1997,
     cover:
@@ -149,7 +149,14 @@ function App() {
 ];
 let media = [...books, ...movies];
 
+const next = () => {
+  media.push(media.shift());
+  books = media.filter(item => item.author);
+  movies = media.filter(item => item.director);
+}
+
   return (
+  
     <div className="app">
       <h1>Books</h1>
       <div className="media-list">
@@ -161,7 +168,9 @@ let media = [...books, ...movies];
               <h3 className="media-author">{book.author}</h3>
               <p className="media-year">{book.year}</p>
             </div>
+         
           </div>
+          
         ))}
       </div>
 
@@ -178,8 +187,12 @@ let media = [...books, ...movies];
           </div>
         ))}
       </div>
+      
     </div>
-  );
+);
+
 }
+
+
 
 export default App;
