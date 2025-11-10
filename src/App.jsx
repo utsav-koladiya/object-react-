@@ -51,7 +51,7 @@ function App() {
     {
       id: 6,
       type: "book",
-      title: "Harry Potter and the Sorcerer",
+      title: "Harry Potter and ",
       author: "J.K. Rowling",
       year: 1997,
       cover:
@@ -100,7 +100,7 @@ function App() {
       id: 11,
       type: "movie",
       title: "The Matrix",
-      director: "Lana Wachowski, Lilly Wachowski",
+      director: "Lana Wachowski, Lill ",
       year: 1999,
       cover: "https://m.media-amazon.com/images/I/51EG732BV3L._AC_.jpg",
     },
@@ -152,7 +152,7 @@ function App() {
     {
       id: 17,
       type: "movie",
-      title: "The Shawshank Redemption",
+      title: "The Shawshank Rede",
       director: "Frank Darabont",
       year: 1994,
       cover:
