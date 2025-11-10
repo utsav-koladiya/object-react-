@@ -1,0 +1,91 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f6f8fb, #e9effd);
+  color: #222;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+  
+}
+
+.app {
+  max-width: 3340px;
+  margin: 40px auto;
+  padding: 20px;
+  
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2c3e50;
+  border-left: 5px solid #4f46e5;
+  padding-left: 10px;
+}
+
+.media-list {
+  
+ 
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.media-item {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 16px;
+  margin-bottom: 20px;
+
+}
+
+.media-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.media-cover {
+  width: 300px;
+  height: 320px;
+  object-fit: cover;
+  border-bottom: 3px solid #4f46e5;
+}
+
+.media-info {
+  padding: 16px;
+}
+
+.media-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 6px 0;
+  color: #111;
+}
+
+.media-author,
+.media-director {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 4px 0;
+}
+
+.media-year {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 6px;
+}
+
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
